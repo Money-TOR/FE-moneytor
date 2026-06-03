@@ -3,7 +3,6 @@ import Hero from "../components/landing/Hero";
 import Features from "../components/landing/Features";
 import CTA from "../components/landing/CTA";
 import Footer from "../components/landing/Footer";
-import ChatbotButton from "../components/shared/chatbotButton";
 import Team from "../components/landing/Team";
 
 function Landing() {
@@ -15,7 +14,6 @@ function Landing() {
             <CTA />
             <Team />
             <Footer />
-            <ChatbotButton />
         </>
     );
 }
