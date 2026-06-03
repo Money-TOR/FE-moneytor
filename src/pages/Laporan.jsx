@@ -147,19 +147,10 @@ const dataKategori = hitungKomposisiPengeluaran();
             return;
         }
 
-
-    let dataExport = trenData;
-
-    if (periode === "bulanan") {
-        dataExport = trenData.filter(
-            item => (item.bulan || item.month || item.label) === bulan
-        );
-    }
-
         exportLaporanPDF({
             periode,
             bulan,
-            trenData: dataExport,
+            trenData,
             summary,
             profil,
             tanggalEkspor: new Date()
