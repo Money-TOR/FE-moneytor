@@ -135,7 +135,7 @@ const dataKategori = hitungKomposisiPengeluaran();
     const ringkasan = [
         { label: 'Total Pemasukan', value: summary ? `Rp ${Number(summary.total_pemasukan || summary.pendapatan || 0).toLocaleString('id-ID')}` : 'Rp 0', color: '#10b981' },
         { label: 'Total Pengeluaran', value: summary ? `Rp ${Number(summary.total_pengeluaran || summary.pengeluaran || 0).toLocaleString('id-ID')}` : 'Rp 0', color: '#ef4444' },
-        { label: 'Laba Bersih', value: summary ? `Rp ${Number(summary.laba_bersih || (summary.total_pemasukan - summary.total_pengeluaran) || 0).toLocaleString('id-ID')}` : 'Rp 0', color: '#064e3b' },
+        { label: 'Laba Bersih', value: summary ? `Rp ${Number(summary.laba_bersih || (summary.total_pemasukan - summary.total_pengeluaran) || 0).toLocaleString('id-ID')}` : 'Rp 0', color: '#10b981' },
         { label: 'Margin Laba', value: summary ? (summary.margin_laba || `${((summary.laba_bersih / summary.total_pemasukan) * 100 || 0).toFixed(1)}%`) : '0%', color: '#f59e0b' },
     ];
 
